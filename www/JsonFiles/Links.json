@@ -1,0 +1,35 @@
+{
+  "Βίντεο": [
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=ITw-Sli1B14\" target=\"_blank\">https://www.youtube.com/watch?v=ITw-Sli1B14</a>"
+    },
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=P943IWoA7RU\" target=\"_blank\">https://www.youtube.com/watch?v=P943IWoA7RU</a>"
+    },
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=9VWpkPoXQS4\" target=\"_blank\">https://www.youtube.com/watch?v=9VWpkPoXQS4</a>"
+    }
+  ],
+  "Συνεντεύξεις": [
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=1QIEj9Cg-Ww\" target=\"_blank\">https://www.youtube.com/watch?v=1QIEj9Cg-Ww</a>"
+    },
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=lJEUaYiMTEs\" target=\"_blank\">https://www.youtube.com/watch?v=lJEUaYiMTEs</a>"
+    },
+    {
+      "Link": "<a href = \"https://www.youtube.com/watch?v=UEWigBtj84U\" target=\"_blank\">https://www.youtube.com/watch?v=UEWigBtj84U</a>"
+    }
+  ],
+  "Διαδικτυακοί Σύνδεσμοι": [
+    {
+      "Link": "<a href = \"https://www.ethnos.gr/sports/article/24886/miltostentogloyapotaratsasetaratsasthnkoryfhthseyrophs\" target=\"_blank\">https://www.ethnos.gr/sports/article/24886/miltostentogloyapotaratsasetaratsasthnkoryfhthseyrophs</a>"
+    },
+    {
+      "Link": "<a href = \"https://sportsfeed.gr/860mm-o-tentogloy-no-1-ston-kosmo\" target=\"_blank\">https://sportsfeed.gr/860mm-o-tentogloy-no-1-ston-kosmo/</a>"
+    },
+    {
+      "Link": "<a href = \"https://www.segas.gr/parisi-2024-thrylos-tentogloy-chryso-olymp/\" target=\"_blank\">https://www.segas.gr/parisi-2024-thrylos-tentogloy-chryso-olymp/</a>"
+    }
+  ]
+}

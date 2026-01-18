@@ -1,0 +1,363 @@
+body {
+    background-color: rgb(101, 164, 223);
+}
+
+header {
+    font-family: "Segoe Print";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Grid */
+.grid {
+
+    width: 100%;
+    height: 100ωη;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: min-content min-content auto min-content;
+
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'aside main'
+        'footer footer';
+}
+
+.float {
+    float: left;
+
+    width: 140px;
+    height: 20px;
+
+    border: 1px solid black;
+
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+
+    font-family: "Verdana";
+    font-size: large;
+    background-color: #c4c444;
+    cursor: pointer;
+}
+
+.float:hover {
+    transition: 0.6s;
+    color: aqua;
+}
+
+header,
+aside,
+main,
+footer {
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+}
+
+nav {
+    margin: auto;
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Aside */
+aside h2 {
+    text-align: center;
+    margin: 5px 5px;
+}
+
+aside hr {
+    border: 1px solid black;
+}
+
+aside button {
+    font-family: "Comic Sans MS";
+
+    text-align: left;
+    vertical-align: top;
+    font-size: large;
+
+    margin: 5px 5px;
+    padding: 15px 15px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+aside button:hover {
+    transition: 0.6s;
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Main */
+main h1 {
+    margin: 5px auto;
+    text-align: center;
+}
+
+main h2 {
+    font-family: "Courier";
+    margin: 10px auto;
+    text-align: center;
+    color: yellow;
+}
+
+/* Biography Structure */
+main p {
+    font-family: "Comic Sans MS";
+
+    margin: 10px 10px;
+    font-size: large;
+}
+
+main img {
+    display: block;
+    margin: 55px auto;
+    /* width: 50%; */
+}
+
+/* Photos Structure */
+.flex {
+    display: flex;
+
+    background-color: blue;
+    flex-direction: row;
+
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 10px;
+}
+
+.columnLeft {
+    background-color: yellow;
+    width: 45%;
+
+    float: right;
+    /* This made it work*/
+    border: 3px solid black;
+    border-radius: 40px;
+
+    margin: 5% 3%;
+}
+
+.columnLeft>* {
+    border-radius: 20px;
+    width: 95%;
+}
+
+.columnRight {
+    background-color: yellow;
+    width: 45%;
+
+    border: 3px solid black;
+    border-radius: 40px;
+
+    margin: 5% 3%;
+}
+
+.columnRight>* {
+    border-radius: 20px;
+    width: 95%;
+}
+
+/* Distinctions and Links Structure */
+table {
+    table-layout: fixed;
+    width: 95%;
+    border-collapse: collapse;
+    border: 3px solid black;
+
+    margin: 2%;
+}
+
+th,
+td {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Rock Salt", cursive;
+    border: 3px solid black;
+
+    padding: 20px;
+}
+
+tr {
+    background-color: lightgray;
+}
+
+th {
+    font-family: "Rock Salt", cursive;
+    letter-spacing: 2px;
+
+    background-color: #e9ce00;
+    color: rgb(0, 132, 255);
+}
+
+/* Manage Structure */
+#mainManageP {
+    text-align: center;
+    margin: 2%;
+}
+
+form {
+    font-size: 20px;    
+}
+
+input {
+    font-size: 16px;
+    font-family: "Rock Salt", cursive;
+    border: 3px solid rgb(0, 132, 255);
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+input[type = text] {
+    width: 12%;
+    
+    padding: 2px;
+    margin: 8px;
+}
+
+input[type = text]:hover {
+    width: 15%;
+}
+
+input[type = text]:focus {
+    border: 3px solid yellow;
+}
+
+input[type = submit] {
+    width: 15%;
+    margin: 2%;
+}
+
+input[type = submit]:hover {
+    width: 12%;
+    border: 3px solid yellow;
+}
+
+p #msg {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;   
+        height: auto;               
+
+
+        grid-template-areas:
+            'header'
+            'nav'
+            'aside'
+            'main'
+            'footer';
+    }
+
+    nav {
+        text-align: center; 
+    }
+
+    .float {
+        float: none;        
+        display: inline-block; 
+        width: 90%;         
+        margin: 5px auto;   
+    }
+
+    .flex {
+        flex-direction: column; 
+    }
+
+    .columnLeft, .columnRight {
+        width: 95%;         
+        float: none;        
+        margin: 10px auto;  
+    }
+
+    header h1 { 
+        font-size: 24px; 
+        word-wrap: break-word;
+    }
+
+    main p {
+        font-size: 16px; 
+        padding: 10px;   
+        text-align: justify; 
+        width: 100%;     
+    }
+
+    main img {
+        width: 90%;      
+        height: auto;    
+        margin: 20px auto;
+    }
+
+    aside button {
+        text-align: center; 
+        width: 100%;        
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;        
+        margin: 0;
+    }
+    
+    th, td {
+        padding: 5px;       
+        font-size: 12px;   
+        letter-spacing: normal; 
+    }
+
+    input[type = "text"] {
+        width: 90%;         
+        margin: 10px auto;
+        display: block;     
+    }
+
+    input[type = "submit"] {
+        width: 30%;         
+    }
+
+    input[type = "text"]:hover {
+        width: 90%;
+    }
+
+    input[type = "submit"]:hover {
+        width: 30%;         
+    }
+}

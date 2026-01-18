@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="JAVASCRIPT.js"></script>
+        <link rel = "stylesheet" href = "CSS.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive Wed Design -->
+
+        <title>Μίλτος Τεντόγλου</title>
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    </head>
+    <body>
+        <div class = "grid">
+            <header>
+                <h1>Καλωσήρθατε</h1>
+            </header>
+            <nav>
+                <button type = "button" class = "float" onclick = "asideMenuChanger('Βιογραφία')">Βιογραφία</button>
+                <button type = "button" class = "float" onclick = "asideMenuChanger('Φωτογραφίες')">Φωτογραφίες</button>
+                <button type = "button" class = "float" onclick = "asideMenuChanger('Διακρίσεις')">Διακρίσεις</button>
+                <button type = "button" class = "float" onclick = "asideMenuChanger('Σύνδεσμοι')">Σύνδεσμοι</button>
+                <button type = "button" class = "float" onclick = "asideMenuChanger('Διαχείριση')">Διαχείριση</button>
+            </nav>
+            <aside>
+                <h2>Αριστερό Μενού</h2>
+                <hr>
+                <button type = "button"  id = "asideB1" onclick = "mainChanger(1)"></button> <br>
+                <button type = "button"  id = "asideB2" onclick = "mainChanger(2)"></button> <br>
+                <button type = "button"  id = "asideB3" onclick = "mainChanger(3)"></button> <br>
+                <button type = "button"  id = "asideB4" onclick = "mainChanger(4)"></button>
+                <script>asideMenuChanger('Βιογραφία')</script>
+            </aside>
+            <main>
+                <h1>Κύριο Τμήμα</h1>
+                <h2 id = "mainH"></h2>
+                
+                <!-- Biography -->
+                <div id = "mainBio">
+                    <p id = "mainBioP"></p>
+                    <img/>
+                </div>
+
+                <!-- Photos -->
+                <div id = "mainPhotos" class = "flex">
+                    <div class = "columnLeft">
+                        <img id = "imgPhoto1"> 
+                        <img id = "imgPhoto2"> 
+                        <img id = "imgPhoto3">
+                    </div>
+                    <div class = "columnRight">
+                        <img id = "imgPhoto4"> 
+                        <img id = "imgPhoto5"> 
+                        <img id = "imgPhoto6">
+                    </div>
+                </div>
+
+            <div id = "mainDistinctions"></div>
+
+            <div id = "mainLinks"></div>
+
+            <div id = "mainManage">
+                <p id = "mainManageP"></p>
+            </div>
+
+            <script>mainChanger(1)</script>
+            </main>
+            <footer>
+                <p>Εργασία 2025-26: Ανάπτυξη διαδικτυακής εφαρμογής με την βιογραφία ενός αθλητή του στίβου </p>
+                <p><small>Τμήμα Πληροφορικής και Τηλεπικοινωνιών ΠΘ &copy; 2026</small></p>
+            </footer>
+        </div>
+    </body>
+</html>
